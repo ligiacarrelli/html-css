@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(137, 43, 226, 0.586);
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead, tfoot{
+            background-color: rgba(221, 160, 221, 0.68);
+
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(221, 160, 221, 0.68);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <caption>
+            População do Brasil
+        </caption>
+        <thead>
+            <tr>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 100px;">População</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td> 14 000 000</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td>11000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 000 000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9000000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9000000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8000000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7000000</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7000000</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>7000000</td>
+
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4000000</td>
+
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4000000</td>
+
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>400000</td>           
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3000000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3000000</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td>3000000</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td>3000000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>3000000</td>
+            </tr>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">210 147 125</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
